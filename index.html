@@ -49,10 +49,11 @@
     }
 
     .cursor {
-      animation: blink 1s step-start infinite;
+      animation: blink 1s steps(1) infinite;
     }
 
     @keyframes blink {
+      0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
     
@@ -75,8 +76,6 @@
 
   <!-- Substitua pelo seu logo real -->
   <img src="https://www.rnztech.com/logo.jpeg?text=LOGO" alt="Logotipo da Empresa" />
-
-  <h2>RNZ Tech!</h2>
 
   <div class="terminal-box">
     Tecnologia a serviço das pessoas <span class="cursor"></span>

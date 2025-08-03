@@ -49,15 +49,11 @@
     }
 
     .cursor {
-      display: inline-block;
-      width: 10px;
-      background-color: #00ff00;
-      animation: blink 1s steps(1) infinite;
-      margin-left: 5px;
+      animation: blink 1s step-start infinite;
     }
 
     @keyframes blink {
-      50% { background-color: transparent; }
+      50% { opacity: 0; }
     }
     
     a.whatsapp {
@@ -67,7 +63,7 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 14px;
       transition: background-color 0.3s;
     }
     a.whatsapp:hover {
@@ -85,7 +81,8 @@
   <div class="terminal-box">
     Tecnologia a serviço das pessoas <span class="cursor"></span>
   </div>
-
+  <p></p>
+  <p></p>
   <!-- Link WhatsApp (substitua o número pelo seu) -->
   <a class="whatsapp" href="https://wa.me/qr/YTMYCTTZXQORN1" target="_blank">
     Fale conosco no WhatsApp

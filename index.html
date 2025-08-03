@@ -17,21 +17,49 @@
       text-align: center;
       padding: 20px;
     }
+    
     img {
       max-width: 360px;
       height: auto;
       margin-bottom: 20px;
     }
+    
     h2 {
       font-size: 22px;
       font-weight: bold;
       color: white;
       margin: 10px 0;
     }
+    
     p {
       font-size: 18px;
       margin-bottom: 20px;
     }
+
+    .terminal-box {
+      background-color: #000000d9;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 16px 24px;
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      color: #00ff00;
+      margin-top: 20px;
+      max-width: 90%;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00ff00;
+      animation: blink 1s steps(1) infinite;
+      margin-left: 5px;
+    }
+
+    @keyframes blink {
+      50% { background-color: transparent; }
+    }
+    
     a.whatsapp {
       display: inline-block;
       padding: 12px 20px;
@@ -53,7 +81,10 @@
   <img src="https://www.rnztech.com/logo.jpeg?text=LOGO" alt="Logotipo da Empresa" />
 
   <h2>RNZ Tech!</h2>
-  <h2>Tecnologia a serviço das pessoas</h2>
+
+  <div class="terminal-box">
+    Tecnologia a serviço das pessoas <span class="cursor"></span>
+  </div>
 
   <!-- Link WhatsApp (substitua o número pelo seu) -->
   <a class="whatsapp" href="https://wa.me/qr/YTMYCTTZXQORN1" target="_blank">
